@@ -21,13 +21,19 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func tapOnLogin(_ sender: Any) {
-        view.endEditing(false)
-        Auth.auth().signIn(withEmail: tfEmail.text!, password: tfPassword.text!) { (AuthData, Error) in
+        view.endEditing(true)
+        Auth.auth().signIn(withEmail: tfEmail.text!, password: tfPassword.text!) { [weak self] (AuthData, Error) in
             if Error != nil{
-                self.view.makeToast(Error!.localizedDescription)
+                self!.view.makeToast(Error!.localizedDescription)
             }
             else{
-                self.view.makeToast("Login successful")
+                //Verified account
+                if AuthData!.user.isEmailVerified {
+                    
+                }
+                else{
+                    self!.view.makeToast("Your account have not verified yet")
+                }
             }
         }
     }

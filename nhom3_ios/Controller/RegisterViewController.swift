@@ -33,7 +33,7 @@ class RegisterViewController: UIViewController {
     */
     //MARK: Register
     @IBAction func tapOnRegister(_ sender: Any) {
-        view.endEditing(false)
+        view.endEditing(true)
         //Check empty string
         if tfEmail.text == nil && tfPassword.text == nil && tfRePassword == nil{
             self.view.makeToast("Please enter all fields")
