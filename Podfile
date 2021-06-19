@@ -7,6 +7,9 @@ target 'nhom3_ios' do
   
 
   # Pods for nhom3_ios
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Toast-Swift'
 
   target 'nhom3_iosTests' do
     inherit! :search_paths
