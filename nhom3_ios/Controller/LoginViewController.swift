@@ -21,13 +21,24 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func tapOnLogin(_ sender: Any) {
-        view.endEditing(true)
+        view.endEditing(false)
         Auth.auth().signIn(withEmail: tfEmail.text!, password: tfPassword.text!) { (AuthData, Error) in
             if Error != nil{
                 self.view.makeToast(Error!.localizedDescription)
             }
             else{
                 self.view.makeToast("Login successful")
+            }
+        }
+    }
+    //forgot password
+    @IBAction func tapOnForgotPassword(_ sender: Any) {
+        Auth.auth().sendPasswordReset(withEmail: tfEmail.text!) { (Error) in
+            if Error != nil {
+                self.view.makeToast(Error!.localizedDescription)
+            }
+            else{
+                self.view.makeToast("Please check your email to change password")
             }
         }
     }
