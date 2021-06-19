@@ -19,6 +19,14 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    //MARK: Auto Login
+    func autoLogin() {
+        let curUserID = Auth.auth().currentUser!.uid
+        if curUserID != nil{
+            
+        }
+    }
 
     @IBAction func tapOnLogin(_ sender: Any) {
         view.endEditing(true)
