@@ -4,12 +4,13 @@
 target 'nhom3_ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  
 
   # Pods for nhom3_ios
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Auth'
-  pod 'Toast-Swift'
+	pod "Firebase/Analytics"
+	pod "Firebase/Auth"
+pod "Firebase/Database"
+pod "Firebase/Core"
+pod "Toast-Swift"
 
   target 'nhom3_iosTests' do
     inherit! :search_paths
