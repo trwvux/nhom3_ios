@@ -9,16 +9,18 @@ import Foundation
 import UIKit
 
 class Acticles {
+        var key: String
         var username:String
         var title:String
         var content:String
         var create:String
         
-        init(data: AnyObject){
+    init(data: AnyObject, key:String){
             let dulieu = data as! Dictionary<String , AnyObject>
             username = dulieu["username"] as! String
             title = dulieu["title"] as! String
             content = dulieu["content"] as! String
             create = dulieu["create"] as! String
+        self.key = key
     }
 }

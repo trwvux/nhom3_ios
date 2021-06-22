@@ -11,6 +11,7 @@ class NewFeedsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblCreate: UILabel!
      
+    @IBOutlet weak var lblContent: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblName: UILabel!
     

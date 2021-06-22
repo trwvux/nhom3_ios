@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4F24D0DBEDC9CB8B569727A0 /* Pods_nhom3_ios_nhom3_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A814D919CBD78DE4E313A1 /* Pods_nhom3_ios_nhom3_iosUITests.framework */; };
 		5F4AE10B2681C09200DA8E6B /* Acticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AE10A2681C09200DA8E6B /* Acticle.swift */; };
+		5F4AE13D2681ECCE00DA8E6B /* DetailActicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AE13C2681ECCE00DA8E6B /* DetailActicleViewController.swift */; };
+		5F4AE1422682298300DA8E6B /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AE1412682298300DA8E6B /* MessageViewController.swift */; };
+		5F4AE1472682299D00DA8E6B /* AddActicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AE1462682299D00DA8E6B /* AddActicleViewController.swift */; };
 		5F4E4ECF267DECA200CCBBFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4ECE267DECA200CCBBFF /* AppDelegate.swift */; };
 		5F4E4ED1267DECA200CCBBFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4ED0267DECA200CCBBFF /* SceneDelegate.swift */; };
 		5F4E4ED3267DECA200CCBBFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4ED2267DECA200CCBBFF /* LoginViewController.swift */; };
@@ -49,6 +52,9 @@
 		42A814D919CBD78DE4E313A1 /* Pods_nhom3_ios_nhom3_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhom3_ios_nhom3_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5200328E3C5846D016AFD78E /* Pods_nhom3_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhom3_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4AE10A2681C09200DA8E6B /* Acticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acticle.swift; sourceTree = "<group>"; };
+		5F4AE13C2681ECCE00DA8E6B /* DetailActicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActicleViewController.swift; sourceTree = "<group>"; };
+		5F4AE1412682298300DA8E6B /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		5F4AE1462682299D00DA8E6B /* AddActicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActicleViewController.swift; sourceTree = "<group>"; };
 		5F4E4ECB267DECA200CCBBFF /* nhom3_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhom3_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4E4ECE267DECA200CCBBFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F4E4ED0267DECA200CCBBFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 				5F4E4F23267DF86800CCBBFF /* ProfileViewController.swift */,
 				5F9F04A6267F357A00D321BA /* NewFeedsTableViewController.swift */,
 				5F9F04AB267F35B800D321BA /* NewFeedsTableViewCell.swift */,
+				5F4AE13C2681ECCE00DA8E6B /* DetailActicleViewController.swift */,
+				5F4AE1412682298300DA8E6B /* MessageViewController.swift */,
+				5F4AE1462682299D00DA8E6B /* AddActicleViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -468,8 +477,11 @@
 				5F4E4ED3267DECA200CCBBFF /* LoginViewController.swift in Sources */,
 				5F4E4ECF267DECA200CCBBFF /* AppDelegate.swift in Sources */,
 				5F9F04AC267F35B800D321BA /* NewFeedsTableViewCell.swift in Sources */,
+				5F4AE1472682299D00DA8E6B /* AddActicleViewController.swift in Sources */,
 				5F9F04A7267F357A00D321BA /* NewFeedsTableViewController.swift in Sources */,
+				5F4AE1422682298300DA8E6B /* MessageViewController.swift in Sources */,
 				5F4E4F24267DF86800CCBBFF /* ProfileViewController.swift in Sources */,
+				5F4AE13D2681ECCE00DA8E6B /* DetailActicleViewController.swift in Sources */,
 				5F4AE10B2681C09200DA8E6B /* Acticle.swift in Sources */,
 				5F4E4ED1267DECA200CCBBFF /* SceneDelegate.swift in Sources */,
 				5F4E4F19267DF7A800CCBBFF /* RegisterViewController.swift in Sources */,

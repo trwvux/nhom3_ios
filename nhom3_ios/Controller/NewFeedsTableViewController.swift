@@ -32,8 +32,8 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
             if let postDist = snapshot.value as? [String:AnyObject]{
                 self.arrActicle.removeAll()
                 for i in postDist {
-                    self.arrActicle.append(Acticles(data: i.value))
-                    print(i.value)
+                    self.arrActicle.append(Acticles(data: i.value, key: i.key))
+                    print(self.arrActicle)
                     self.tbNewFeeds.reloadData()
                 }
             }
@@ -49,13 +49,16 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
             cell.lblName.text = acticle.username
             cell.lblCreate.text = acticle.create
             cell.lblTitle.text = acticle.title
+            cell.lblContent.text = acticle.content
             return cell
         }
         else{
             fatalError("Error load new feeds")
         }
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+    }
 }
 
 
