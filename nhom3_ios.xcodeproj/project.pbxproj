@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F24D0DBEDC9CB8B569727A0 /* Pods_nhom3_ios_nhom3_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A814D919CBD78DE4E313A1 /* Pods_nhom3_ios_nhom3_iosUITests.framework */; };
+		5F4AE10B2681C09200DA8E6B /* Acticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AE10A2681C09200DA8E6B /* Acticle.swift */; };
 		5F4E4ECF267DECA200CCBBFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4ECE267DECA200CCBBFF /* AppDelegate.swift */; };
 		5F4E4ED1267DECA200CCBBFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4ED0267DECA200CCBBFF /* SceneDelegate.swift */; };
 		5F4E4ED3267DECA200CCBBFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4ED2267DECA200CCBBFF /* LoginViewController.swift */; };
@@ -47,6 +48,7 @@
 		20A444E4B3D6EB7F44B23D3E /* Pods-nhom3_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nhom3_iosTests.release.xcconfig"; path = "Target Support Files/Pods-nhom3_iosTests/Pods-nhom3_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		42A814D919CBD78DE4E313A1 /* Pods_nhom3_ios_nhom3_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhom3_ios_nhom3_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5200328E3C5846D016AFD78E /* Pods_nhom3_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nhom3_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4AE10A2681C09200DA8E6B /* Acticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acticle.swift; sourceTree = "<group>"; };
 		5F4E4ECB267DECA200CCBBFF /* nhom3_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhom3_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4E4ECE267DECA200CCBBFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F4E4ED0267DECA200CCBBFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				5F4E4F16267DF67B00CCBBFF /* Resources */,
-				5F4E4F15267DF66C00CCBBFF /* ViewModels */,
 				5F4E4F14267DF65E00CCBBFF /* Views */,
 				5F4E4F13267DF65700CCBBFF /* Models */,
 				5F4E4F12267DF64D00CCBBFF /* Controller */,
@@ -170,6 +171,7 @@
 		5F4E4F13267DF65700CCBBFF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5F4AE10A2681C09200DA8E6B /* Acticle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,13 +183,6 @@
 				5F4E4F17267DF68C00CCBBFF /* Storyboards */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		5F4E4F15267DF66C00CCBBFF /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5F4E4F16267DF67B00CCBBFF /* Resources */ = {
@@ -218,7 +213,6 @@
 				79C93A2020E8C26E1BDE0195 /* Pods-nhom3_iosTests.debug.xcconfig */,
 				20A444E4B3D6EB7F44B23D3E /* Pods-nhom3_iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -476,6 +470,7 @@
 				5F9F04AC267F35B800D321BA /* NewFeedsTableViewCell.swift in Sources */,
 				5F9F04A7267F357A00D321BA /* NewFeedsTableViewController.swift in Sources */,
 				5F4E4F24267DF86800CCBBFF /* ProfileViewController.swift in Sources */,
+				5F4AE10B2681C09200DA8E6B /* Acticle.swift in Sources */,
 				5F4E4ED1267DECA200CCBBFF /* SceneDelegate.swift in Sources */,
 				5F4E4F19267DF7A800CCBBFF /* RegisterViewController.swift in Sources */,
 			);

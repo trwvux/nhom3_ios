@@ -9,9 +9,11 @@ import UIKit
 
 class NewFeedsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var tvTitle: UITextView!
-    @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblCreate: UILabel!
+     
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
