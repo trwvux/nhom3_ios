@@ -23,6 +23,7 @@
 		5F4E4F19267DF7A800CCBBFF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4F18267DF7A800CCBBFF /* RegisterViewController.swift */; };
 		5F4E4F24267DF86800CCBBFF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E4F23267DF86800CCBBFF /* ProfileViewController.swift */; };
 		5F959F332683542E00826E91 /* InformationUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F959F322683542E00826E91 /* InformationUserViewController.swift */; };
+		5F959F452683A84600826E91 /* InforUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F959F442683A84600826E91 /* InforUser.swift */; };
 		5F9F04A7267F357A00D321BA /* NewFeedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F04A6267F357A00D321BA /* NewFeedsTableViewController.swift */; };
 		5F9F04AC267F35B800D321BA /* NewFeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F04AB267F35B800D321BA /* NewFeedsTableViewCell.swift */; };
 		5FC5C8FD267F9320008DFBB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FC5C8FC267F9320008DFBB8 /* GoogleService-Info.plist */; };
@@ -73,6 +74,7 @@
 		5F4E4F18267DF7A800CCBBFF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5F4E4F23267DF86800CCBBFF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5F959F322683542E00826E91 /* InformationUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationUserViewController.swift; sourceTree = "<group>"; };
+		5F959F442683A84600826E91 /* InforUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforUser.swift; sourceTree = "<group>"; };
 		5F9F04A6267F357A00D321BA /* NewFeedsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedsTableViewController.swift; sourceTree = "<group>"; };
 		5F9F04AB267F35B800D321BA /* NewFeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedsTableViewCell.swift; sourceTree = "<group>"; };
 		5FC5C8FC267F9320008DFBB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				5F4AE10A2681C09200DA8E6B /* Acticle.swift */,
+				5F959F442683A84600826E91 /* InforUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			files = (
 				5F4E4ED3267DECA200CCBBFF /* LoginViewController.swift in Sources */,
 				5F4E4ECF267DECA200CCBBFF /* AppDelegate.swift in Sources */,
+				5F959F452683A84600826E91 /* InforUser.swift in Sources */,
 				5F959F332683542E00826E91 /* InformationUserViewController.swift in Sources */,
 				5F9F04AC267F35B800D321BA /* NewFeedsTableViewCell.swift in Sources */,
 				5F4AE1472682299D00DA8E6B /* AddActicleViewController.swift in Sources */,

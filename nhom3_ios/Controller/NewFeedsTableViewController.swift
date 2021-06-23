@@ -37,9 +37,6 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
                 }
             }
         })
-        for i in self.arrActicle {
-            print(i.key)
-        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrActicle.count
