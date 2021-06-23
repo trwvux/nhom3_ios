@@ -8,23 +8,41 @@
 import UIKit
 import FirebaseAuth
 import Toast_Swift
-
+import Firebase
+import FirebaseDatabase
+var curUserID:String?
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var tfEmail: UITextField!
     
     @IBOutlet weak var tfPassword: UITextField!
-    
+    var ref: DatabaseReference{
+        return Database.database().reference()
+    }
+    var check:Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        autoLogin()
         // Do any additional setup after loading the view.
+        let postRef = ref.child("user")
+
+        let refHandle = postRef.observe(DataEventType.value, with: { (snapshot) in
+            if let postDist = snapshot.value as? [String:AnyObject]{
+                for i in postDist {
+                    if i.key == curUserID {
+                        self.check = true
+                    }
+                }
+            }
+        })
     }
     
     //MARK: Auto Login
     func autoLogin() {
-        let curUserID = Auth.auth().currentUser!.uid
+        curUserID = Auth.auth().currentUser?.uid
         if curUserID != nil{
-            
+            let src = storyboard?.instantiateViewController(identifier: "main") as! UITabBarController
+            present(src, animated: true, completion: nil)
         }
     }
 
@@ -37,6 +55,15 @@ class LoginViewController: UIViewController {
             else{
                 //Verified account
                 if AuthData!.user.isEmailVerified {
+                    if self?.check == false{
+                        let src = self?.storyboard?.instantiateViewController(identifier: "infor") as! InformationUserViewController
+                        self?.navigationController?.pushViewController(src, animated: true)
+                    }
+                    else{
+                        let src = self?.storyboard?.instantiateViewController(identifier: "main") as! UITabBarController
+                            self?.present(src, animated: true, completion: nil)
+                        
+                    }
                     
                 }
                 else{

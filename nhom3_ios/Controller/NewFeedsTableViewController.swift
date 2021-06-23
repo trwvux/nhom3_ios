@@ -14,8 +14,7 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tbNewFeeds: UITableView!
     
-    var arrActicle: [Acticles] = []
-    
+    var arrActicle: Array<Acticles> = Array<Acticles>()
     var ref: DatabaseReference{
         return Database.database().reference()
     }
@@ -32,13 +31,15 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
             if let postDist = snapshot.value as? [String:AnyObject]{
                 self.arrActicle.removeAll()
                 for i in postDist {
-                    self.arrActicle.append(Acticles(data: i.value, key: i.key))
-                    print(self.arrActicle)
+                    let acticle = Acticles(data: i.value, key: i.key)
+                    self.arrActicle.append(acticle)
                     self.tbNewFeeds.reloadData()
                 }
             }
-
         })
+        for i in self.arrActicle {
+            print(i.key)
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrActicle.count
@@ -57,7 +58,18 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            
+        var key: String?
+        if let selectedCell = sender as? NewFeedsTableViewCell{
+            for i in arrActicle{
+                if i.username == selectedCell.lblName.text && i.create == selectedCell.lblCreate.text && i.title == selectedCell.lblTitle.text && i.content == selectedCell.lblContent.text{
+                    key = i.key
+                }
+            }
+            if let destinationController = segue.destination as? DetailActicleViewController{
+                destinationController.keyActicle = key ?? " "
+            }
+           
+        }
     }
 }
 

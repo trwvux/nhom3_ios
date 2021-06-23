@@ -16,7 +16,7 @@ class Acticles {
         var create:String
         
     init(data: AnyObject, key:String){
-            let dulieu = data as! Dictionary<String , AnyObject>
+        let dulieu = data as! Dictionary<String , AnyObject>
             username = dulieu["username"] as! String
             title = dulieu["title"] as! String
             content = dulieu["content"] as! String

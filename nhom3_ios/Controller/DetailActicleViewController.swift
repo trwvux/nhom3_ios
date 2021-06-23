@@ -9,10 +9,10 @@ import UIKit
 
 class DetailActicleViewController: UIViewController {
     
-
+    var keyActicle: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(keyActicle)
         // Do any additional setup after loading the view.
     }
     

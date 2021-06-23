@@ -51,7 +51,7 @@ class RegisterViewController: UIViewController {
 //                    self.view.makeToast("Register successful")
 //                }
                 //send verification mail
-                AuthData!.user.sendEmailVerification { (Error) in
+                AuthData?.user.sendEmailVerification { (Error) in
                     if Error != nil{
                         self.view.makeToast(Error!.localizedDescription)
                     }
