@@ -25,9 +25,10 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
         tbNewFeeds.dataSource = self
         tbNewFeeds.estimatedRowHeight = 300
         tbNewFeeds.rowHeight = UITableView.automaticDimension
+        
         let postRef = ref.child("acticle")
 
-        let refHandle = postRef.observe(DataEventType.value, with: { (snapshot) in
+        _ = postRef.observe(DataEventType.value, with: { (snapshot) in
             if let postDist = snapshot.value as? [String:AnyObject]{
                 self.arrActicle.removeAll()
                 for i in postDist {
@@ -62,8 +63,8 @@ class NewFeedsViewController: UIViewController, UITableViewDelegate, UITableView
                     key = i.key
                 }
             }
-            if let destinationController = segue.destination as? DetailActicleViewController{
-                destinationController.keyActicle = key ?? " "
+            if let destinationController = segue.destination as? CommentViewController{
+                destinationController.keyActicle = key!
             }
            
         }

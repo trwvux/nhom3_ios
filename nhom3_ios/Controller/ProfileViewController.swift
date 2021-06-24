@@ -32,7 +32,6 @@ class ProfileViewController: UIViewController {
         let curUser = (Auth.auth().currentUser?.uid)!
         let postRef = ref.child("user").child(curUser)
         let email = Auth.auth().currentUser?.email
-        lblEmail.text = email
         let refHandle = postRef.observe(DataEventType.value, with: { (snapshot) in
             let value = snapshot.value as! NSDictionary
             self.lblName.text = value["name"] as? String
@@ -41,6 +40,7 @@ class ProfileViewController: UIViewController {
             self.lblGender.text = value["gender"] as? String
             self.lblBirthday.text = value["birthday"] as? String
         })
+        lblEmail.text = email
     }
     //Log out
     

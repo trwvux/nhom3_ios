@@ -57,8 +57,9 @@ class InformationUserViewController: UIViewController {
         }
         else{
             self.ref.child("user").child(curUser).setValue(["name":name,"address":address,"birthday":birthday,"profession":profession,"gender":gender])
-            let vc = storyboard!.instantiateViewController(identifier: "newfeeds") as! UITabBarController
-            present(vc, animated: true, completion: nil)
+//            let vc = storyboard!.instantiateViewController(identifier: "newfeeds") as! UITabBarController
+//            present(vc, animated: true, completion: nil)
+            dismiss(animated: true, completion: nil)
         }
         
     }
